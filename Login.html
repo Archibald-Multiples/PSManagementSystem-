@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)file:///C:/xampp/htdocs/primary/login.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="css/log.css">
+</head>
+<body>
+
+    
+<div class="login-container h2" style="background-color: rgb(243, 243, 243);">
+    <h1 style="text-align: center;margin-top: 10px;color: rgb(0, 0, 0);">MULTIPLES - Training Course</h1>
+
+    <div class="login-container">
+
+        <h2 style="align-content: center; text-align: center;">Login</h2>
+
+        <form action="login-process.php" method="post">
+
+            <label for="phone_number" maxlength="10" pattern="{1,10}">Phone Number:</label>
+
+            <input type="phone_number" id="phone_number" name="phone_number" maxlength="10" required>
+
+            <label for="create_password">Password:</label>
+
+            <input type="password" id="create_password" name="create_password" required>
+
+            <input type="submit" value="Login">
+        </form>
+
+        <h4 style="font-size: small;"><a href="forgetpassword.html">Forget password </a></h4>
+        <h5>Don't have an Account?<a href="registrations.html">Register</a>
+        </h5>
+
+    </div>
+    <p id="error-message"></p>
+
+</body>
+</html>
+
+
+
+
